@@ -6,7 +6,12 @@ const UseEffectBasics = () => {
   const [ value, setValue ] = useState(0);
 
   useEffect( ()=> {
-    console.log( '1 st time will run on load then on every render')
+    // you can initialize is state inside useEffect
+    // but u cant initialize useEffect inside if statement
+    if( value >= 1 ){
+      // check the tab to see changes
+      document.title = `New Messages(${value})`
+    }
   })
   return (
   <>
