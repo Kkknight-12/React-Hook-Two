@@ -57,6 +57,11 @@ const Index = () => {
     e.preventDefault();
     if( name ){
       const newItem = { 
+        // just sending the name not key value pair but name = input
+        // so with name we are sending input value in object
+        // let name = 'aman lal chadda'
+        // const bo = {name, id:1 }
+        // console.log(bo) // {name: "amana lal chadda", id: 1}
         id: new Date().getTime().toString(), name 
       };
       dispatch( { type: 'ADD_ITEM', payload: newItem } );

@@ -1,5 +1,6 @@
 const Reducer = ( state, action ) => {
     if( action.type === 'ADD_ITEM' ){
+        console.log(action.payload)
         // console.log(state, action)
         // state -> {people: Array(0), isModalOpen: false, modalContent: ""} 
         // action -> {type: "ADD_ITEM", payload: {…}}
