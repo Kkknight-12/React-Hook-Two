@@ -66,7 +66,7 @@ const Index = () => {
 }
 
 
-// memo function checks if the prop products changes then only re-render the function
+// memo function checks if the 'prop' products changes then only re-render the function
 // BigList
 // don't confuse memo function with useMemo they are different
 const BigList = React.memo( ({ products, addToCart }) => {
